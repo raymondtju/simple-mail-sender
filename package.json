@@ -1,0 +1,25 @@
+{
+  "name": "simple-mail-sender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "npm run build:tsc && cross-env NODE_ENV=production node dist/index.js",
+    "build:tsc": "tsc && tsc-alias"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.2"
+  }
+}
