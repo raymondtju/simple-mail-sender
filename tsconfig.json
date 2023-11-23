@@ -22,9 +22,11 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"],
-      "@/config": ["config"]
+      "@/config": ["config/*"],
+      "@/lib": ["lib/*"],
+      "@/interfaces": ["interfaces/*"]
     }
   },
-  // "include": ["src/**/*.ts", ".env"],
+  "include": ["src/**/*.ts", ".env"],
   "exclude": ["node_modules"]
 }
